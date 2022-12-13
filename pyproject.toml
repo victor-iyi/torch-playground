@@ -39,8 +39,8 @@ packages = [
 python = ">=3.9"
 
 # Tensor and dynamic neural net with strong GPU acceleration.
-torch = { version = ">=1.13.0", allow-prereleases = true }
-torchvision = "*"
+# torch = { version = ">=1.13.0", allow-prereleases = true }
+# torchvision = "*"
 # torchaudio = "*"
 # State-of-the-art Machine Learning for JAX, PyTorch & TensorFlow.
 # Provides APIs and tools to download and train pretrained models.

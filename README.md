@@ -18,6 +18,16 @@
 > This repository is developed for educational purposes using the official
 PyTorch tutorials.
 
+**NOTE** Due to issues installing PyTorch with `poetry`, I've commented out the
+dependency in `pyproject.toml` and installed it with the following command.
+Visit the [PyTorch homepage][pytorch] to check install options with GPU.
+
+```sh
+pip install torch torchvision torchaudio
+```
+
+[pytorch]: https://pytorch.org
+
 ## Contribution
 
 You are very welcome to modify and use them in your own projects.
