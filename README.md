@@ -28,6 +28,58 @@ pip install torch torchvision torchaudio
 
 [pytorch]: https://pytorch.org
 
+## Introduction to PyTorch
+
+- [x] Quickstart
+- [ ] Tensors
+- [ ] Datasets & DataLoaders
+- [ ] Transforms
+- [ ] Build the Neural Network
+- [ ] Automatic Differentiation with `torch.autograd`
+- [ ] Optimizing Model Parameters
+- [ ] Save and Load the Model
+
+## Learning PyTorch
+
+- [ ] Deep Learning with PyTorch: A 60 Minute Blitz
+- [ ] Learning PyTorch with Examples
+- [ ] What is `torch.nn` really?
+- [ ] Visualizing Models, Data and Training with TensorBoard
+
+## Image and Video
+
+- [ ] TorchVision Object Detection Finetuning Tutorial
+- [ ] Transfer Learning for Computer Vision Tutorial
+- [ ] Adversarial Example Generation
+- [ ] DCGAN Tutorial
+- [ ] Spatial Transformer Networks Tutorial
+- [ ] Optimizing Vision Transformer Model for Deployment
+
+## Audio
+
+- [ ] Audio I/O
+- [ ] Audio Resampling
+- [ ] Audio Data Augmentation
+- [ ] Audio Feature Augmentation
+- [ ] Audio Datasets
+- [ ] Speech Recognition with Wav2Vec2
+- [ ] Speech Command Classification with `torchaudio`
+- [ ] Forced Alighment with Wav2Vec2
+
+## Text
+
+- [ ] Language Modeling with `nn.Transformer` and `TorchText`
+- [ ] Fast Transformer Inference with Better Transformer
+- [ ] NLP From Scratch: Classifying Names with a Character-Level RNN
+- [ ] NLP From Scratch: Generating Names with a Character-Level RNN
+- [ ] NLP From Scratch: Translation with a Sequence to Sequence Network and Attention
+- [ ] Text classification with `torchtext` library
+
+## Reinforcement Learning
+
+- [ ] Reinforcement Learning (DQN) Tutorial
+- [ ] Train a Mario-playing RL Agent
+
 ## Contribution
 
 You are very welcome to modify and use them in your own projects.
