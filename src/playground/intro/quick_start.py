@@ -10,14 +10,14 @@ def load_data(
     batch_size: int = 64,
     shuffle: bool = True,
     train: bool = True,
-    download: bool = True
+    download: bool = True,
 ) -> DataLoader:
 
     dataset = datasets.FashionMNIST(
         root=root,
         train=train,
         download=download,
-        transform=ToTensor()
+        transform=ToTensor(),
     )
 
     loader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
@@ -25,17 +25,17 @@ def load_data(
     return loader
 
 
-class NeuralNetwork(nn.Module):
+class NeuralNetwork(nn.Module):  # type: ignore
     def __init__(self) -> None:
         super(NeuralNetwork, self).__init__()
         self.flatten = nn.Flatten()
         self.linear_relu_stack = nn.Sequential(
-            nn.Linear(28*28, 512),
+            nn.Linear(28 * 28, 512),
             nn.ReLU(),
             nn.Linear(512, 512),
             nn.ReLU(),
             nn.Linear(512, 10),
-            nn.ReLU()
+            nn.ReLU(),
         )
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
@@ -48,9 +48,9 @@ def train(
     data_loader: DataLoader,
     model: nn.Module,
     loss_fn: nn.Module,
-    optimizer: torch.optim.Optimizer
+    optimizer: torch.optim.Optimizer,
 ) -> None:
-    size = len(data_loader.dataset)  # type: ignore
+    size = len(data_loader.dataset)
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     model.train()
@@ -75,12 +75,12 @@ def train(
 def test(
     data_loader: DataLoader,
     model: nn.Module,
-    loss_fn: nn.Module
+    loss_fn: nn.Module,
 ) -> None:
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     model.eval()
 
-    size = len(data_loader.dataset)  # type: ignore
+    size = len(data_loader.dataset)
     num_batches = len(data_loader)
     test_loss, correct = 0.0, 0.0
 
