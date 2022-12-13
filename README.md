@@ -15,8 +15,12 @@
 -->
 # PyTorch Playground
 
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/victor-iyi/torch-playground/main.svg)](https://results.pre-commit.ci/latest/github/victor-iyi/torch-playground/main)
+
 > This repository is developed for educational purposes using the official
-PyTorch tutorials.
+[PyTorch tutorials][tutorials].
+
+[tutorials]: https://pytorch.org/tutorials/index.html
 
 **NOTE** Due to issues installing PyTorch with `poetry`, I've commented out the
 dependency in `pyproject.toml` and installed it with the following command.
