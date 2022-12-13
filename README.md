@@ -15,6 +15,8 @@
 -->
 # PyTorch Playground
 
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/victor-iyi/torch-playground/main.svg)](https://results.pre-commit.ci/latest/github/victor-iyi/torch-playground/main)
+
 > This repository is developed for educational purposes using the official
 PyTorch tutorials.
 
