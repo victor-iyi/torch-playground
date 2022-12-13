@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# Install PyTorch nightly.
+# For more installation instructions check https://pytorch.org
+pip install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
+
+# Install dependencies from pyproject.toml
+if [ ! command -v poetry >/dev/null 2>&1 ]; then
+  # Install poetry.
+  # For more installation instructions check: https://python-poetry.org/docs/#installation
+  echo 'Installing Poetry'
+  curl -sSL https://install.python-poetry.org | python3 -
+fi
+
+# Install dependencies with poetry.
+poetry install
